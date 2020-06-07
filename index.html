@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<script src="addremove.js"></script>
+	<script src="dropdown.js"></script>
+  </head>
+  <body onload="resetSelection()">
+	<header>
+	  <h1>Extracurricular Activities Tracker</h1>
+	</header>
+	<table>
+	  <tr>
+		<td> 
+		  <select id="category" class="categoryDropdown" onchange="makeSubmenu(this.value)">
+		    <option value="" disabled selected>Choose Category</option>
+            <option value="Arts">Arts</option>
+            <option value="History">History</option>
+            <option value="Language">Language</option>
+			<option value="Literature">Literature</option>
+			<option value="Mathematics">Mathematics</option>
+			<option value="Science">Science</option>
+			<option value="Music">Music</option>
+			<option value="Drama">Drama</option>
+			<option value="Hobby">Hobby</option>
+			<option value="Fitness">Fitness</option>
+            <option value="Athletics">Athletics</option>
+            <option value="Arts">Arts (Music, Theater, Fine Arts)</option>
+            <option value="Community/Activities">Community Activities (Volunteer, Religious, Scouts, etc.)</option>
+			<option value="Work/Experience">Work Experience</option>
+			<option value="Achievements/Honors">Achievements and Honors</option>
+          </select>
+		</td>
+	    <td> 
+		  <select id="clubSelect" class="categoryDropdown" size="1">
+			<option value="" disabled selected>Choose Club</option>
+			<option></option>
+		  </select>
+		</td>
+		<td><input type="number" class="Grades" id="Grades" min="9" max="12" placeholder="Grade..."></td>
+		<td><input type="text" id="Details" class="details" placeholder="Titles/Recognition..."></td>
+		<td><span onclick="newElement()" class="addBtn">Add</span></td>
+	  </tr>
+	  <tr>
+	  <ul id="myUL">
+	  </ul>
+	  </tr>
+	</table>
+  <div>
+	<h3>Career</h3>
+	  <div><a href="https://www.deca.org/" target="_blank">DECA</a></div>
+	  <div><a href="https://www.fbla-pbl.org/" target="_blank">Future Business Leaders of America</a></div>
+	  <div><a href="http://futureteachers.org/" target="_blank">Future Teachers of America</a></div>
+	  <div><a href="https://www.ffa.org/" target="_blank">Future Farmers of America</a></div>
+	  <div><a href="https://www.futuredocs.com/" target="_blank">Future Physicians and Medical Scientist</a></div>
+	  <div><a href="https://fcclainc.org/" target="_blank">Future Career and Community Leaders of America</a></div>
+	  <div><a href="http://www.hosa.org/" target="_blank">Health Occupations Students of America</a></div>
+	  <div><a href="https://jausa.ja.org/" target="_blank">Junior Achievement</a></div>
+	  <div><a href="https://unausa.org/model-un/" target="_blank">Model United Nations</a></div>
+	  <div><a href="https://www.skillsusa.org/" target="_blank">Skillsusa</a></div>
+	  <div><a href="https://tsaweb.org/" target="_blank">Technology Student Association</a></div>
+	
+	<h3>Social/Community Service</h3>
+	  <div><a href="https://mlh.io/" target="_blank">Major League Hacking</a></div>
+	  <div><a href="https://www.bestbuddies.org/" target="_blank">Best Buddies Club</a></div>
+	  <div><a href="https://www.daysforgirls.org/" target="_blank">Days For Girls</a></div>
+	  <div><a href="http://www.freerice.com/ricebowl" target="_blank">Free Rice Club</a></div>
+	  <div><a href="https://friendsofthepound.com/" target="_blank">Friends of the Pound</a></div>
+	  <div><a href="https://www.habitat.org/" target="_blank">Habitat for Humanity</a></div>
+	  <div><a href="https://www.rotary.org/en/get-involved/interact-clubs" target="_blank">Interact Club</a></div>
+	  <div><a href="https://www.optimist.org/" target="_blank">Optimist Club</a></div>
+	  <div><a href="https://www.sadd.org/" target="_blank">SADD</a></div>
+  <div>
+     <label for="extra"><h3>Notes:</h3></label>
+       <textarea id="extra" name="extra" rows="3" cols="100"></textarea>
+  </body>
